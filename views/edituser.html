@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/admin-panel.css" rel="stylesheet" type="text/css">
+    <title>Editar usuario</title>
+</head>
+<body>
+    <div name="edit-user">
+        <h3>Edit user</h3>
+        <form action="/api/user/edit" method="POST">
+            <ul id="formulario">
+                <input type="text" id="id" name="id" value="#" hidden="true">
+                <li>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" value="#">
+                </li>
+                <li>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" value="#">
+                </li>
+                <li>
+                    <label for="genero">Género:</label>
+                    <select type="select" id="genero" name="genero" value="#">
+                        <option>Femenino</option>
+                        <option>Masculino</option>
+                    </select>
+                    </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="#">
+                </li>
+                <li>
+                    <label for="profesion">Profesión:</label>
+                    <input type="text" id="profesion" name="profesion" value="#">
+                </li>
+                <li>
+                    <label for="salario">Salario:</label>
+                    <input type="number" id="salario" name="salario" value="#">
+                </li>
+                <li>
+                    <label for="profile_pic">Foto de perfil (URL):</label>
+                    <input type="url" id="profile_pic" name="profile_pic" value="#">
+                </li>    
+            </ul>
+            <button>Enviar</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="/js/edit-user.js"></script>
+</body>
+</html>
